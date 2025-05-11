@@ -13,10 +13,12 @@ public class Map {
 		map.put(2,"mango");
 		map.put(8,"Apfel");
 		map.put(4,"Birne");
+		map.put(5, "Orangen");
 
 	//System.out.println(map.get(5));
 	
 	Set<Integer> m = map.keySet();
+	
 	map.remove(5);
 	System.out.println(map.containsKey(4));
 	map.replace(8, "Avocado");

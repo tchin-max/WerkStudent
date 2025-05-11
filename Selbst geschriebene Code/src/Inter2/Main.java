@@ -26,7 +26,7 @@ public class Main {
 		
 			try {
 				FileWriter fileWriter = new FileWriter(file,true);
-				fileWriter.write("Hey es also geklappt 2.\n");
+				fileWriter.write("Hey  also geklappt 2.\n");
 				fileWriter.close();
 			} catch (IOException e) {
 			

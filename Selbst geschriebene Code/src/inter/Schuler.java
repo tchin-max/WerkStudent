@@ -9,8 +9,11 @@ void name() {
 }
 public static void main(String[] args) {
 	Personn o = new Oberscgule();
+	
 	Personn l = new Lehrer();
+	
 	Lehrer lh  = (Lehrer)l;
+	
 	getgehen(l);
 getgehen(o);	
 }
