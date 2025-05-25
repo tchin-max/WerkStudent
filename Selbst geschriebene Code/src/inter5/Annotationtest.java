@@ -7,12 +7,14 @@ import java.lang.reflect.Method;
 public class Annotationtest {
 	
 	@SuppressWarnings("unsued")
+	
 public static void main(String[] args) throws Exception {
 	Cat cat = new Cat("Benji", 5);
 	reflection r  = new reflection();
-	//System.out.println(r.getClass().isAnnotationPresent(VeryImportant.class));
 	
-//System.out.println(	cat.getClass().isAnnotationPresent(VeryImportant.class));
+	System.out.println(r.getClass().isAnnotationPresent(VeryImportant.class));
+	
+System.out.println(	cat.getClass().isAnnotationPresent(VeryImportant.class));
 
 Method[] met = cat.getClass().getDeclaredMethods();
 for (Method method : met) {

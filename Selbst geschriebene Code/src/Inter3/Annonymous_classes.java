@@ -21,6 +21,7 @@ System.out.println("ouaouoauoaouaou");
 		}
 	};
 	ad.dog();
+
 	
 	Runnable r = new Runnable() {
 		
