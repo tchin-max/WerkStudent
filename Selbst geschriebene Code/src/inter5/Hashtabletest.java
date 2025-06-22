@@ -24,6 +24,7 @@ public static void main(String[] args) {
 	
 	for (Integer key : h.keySet()) {
 		System.out.println(key.hashCode() + "\t"+h.get(key));
+		
 	}
 	System.out.println();
 

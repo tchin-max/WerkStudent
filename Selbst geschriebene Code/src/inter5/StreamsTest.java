@@ -54,6 +54,8 @@ public class StreamsTest {
 			}
 		}
 //females.forEach(System.out::println );
+		
+		
 List<Personn> soeted = 
 p.stream()
 .sorted(Comparator.comparing( Personn::getAge)
@@ -69,7 +71,6 @@ p.stream()
 		
 		//p.forEach(System.out::println );
 	boolean matching =	p.stream().allMatch(t -> t.getAge()>12);
-	System.out.println();
 	
 	//System.out.println(matching);
 boolean anymatch =	p.stream().anyMatch(t -> t.getAge()>12);
@@ -79,19 +80,22 @@ boolean nonmatch =	p.stream().noneMatch(t -> t.getName().equals("Zimmermann"));
 //System.out.println(nonmatch);
 
 p.stream()
-.min(Comparator.comparing(Personn::getAge))
-.ifPresent(t -> System.out.println(t) );
+.min(Comparator.comparing(Personn::getAge)).ifPresent(t ->System.out.println(t) );;
+System.out.println();
+
  
 Map<Gender, List<Personn>> groupByGender =
 p.stream().collect(Collectors.groupingBy(Personn::getGender));
-groupByGender.forEach((t, u) -> {System.out.println(t); u.forEach(g -> System.out.println(g)  );  });
+//groupByGender.forEach((t, u) -> {System.out.println(t); u.forEach(g -> System.out.println(g)  );  });
 
 Optional<String> oldestFemal=
 p.stream()
 .filter(t ->t.getGender().equals(Gender.FEMALE))
 .max(Comparator.comparing(Personn::getAge))
-.map(Personn::getName);
+.map(t -> t.getName() );
 oldestFemal.ifPresent(System.out::println );;
+
+
 	}
 	private static List<Personn> name() {
 		return List.of(new Personn("joe", 12, Gender.MALE),

@@ -19,14 +19,17 @@ public class OptionalTest {
 		public String getEmail() {
 			return email;
 		}
-		
-		
-		
-		
 	}
-	public static void main(String[] args) {
+		
+		
+//		public static Optional<Cat> catname(String nam) {
+//			Cat cc = new Cat("jojo", 5);
+//			return Optional.empty();
+//		
+//	}
+
 //Optional<Cat> c =		catname("jojo");
-//c.ifPresentOrElse(t -> t.getName(),() -> Optional.empty());
+//c.ifPresentOrElse(t -> t.getName(),() -> Optional.ofNullable(null));
 //
 //c.map(Cat::getName).orElse("gogg");//return ein OPtional, das das Ergebnis der Methode GetAge in c
 //
@@ -38,21 +41,19 @@ public class OptionalTest {
 //	System.out.println(	c.get().getAge());
 //
 //}else {
-//Optional.empty();}
-//	}
-//	public static Optional<Cat> catname(String nam) {
-//		Cat cc = new Cat("jojo", 5);
-//		return Optional.empty();
+//Optional.empty();
+//}
+
+
+		public static void main(String[] args) {
 		
-		
-//		Optional<String> op = Optional.ofNullable(null);
+		Optional<String> op = Optional.ofNullable(null);
 //		System.out.println(op.isEmpty());
 //		System.out.println(op.isPresent());
 		
-	//	String ol = op.map(String::toUpperCase).orElseThrow(IllegalThreadStateException::new);
-//System.out.println(ol);
+		//String ol = op.map(String::toUpperCase).orElseThrow(IllegalThreadStateException::new);
 //op.ifPresent(t -> System.out.println(t));
-//op.ifPresentOrElse(System.out::println, () -> System.out.println("world") );
+op.ifPresentOrElse(System.out::println, () -> System.out.println("world") );
 
 		p person = new p(null, "joe.gamil.com");
 		System.out.println(person
@@ -60,7 +61,7 @@ public class OptionalTest {
 				.map(String::toUpperCase)
 				.orElse("not provided"));
 				
-		
+	
 	}
 	
 

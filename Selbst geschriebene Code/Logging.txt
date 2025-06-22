@@ -1,0 +1,4 @@
+Juni 21, 2025 9:40:15 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben
+Juni 21, 2025 9:40:33 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben ja ja

@@ -1,4 +1,4 @@
-package inter5;
+ package inter5;
 
 import java.awt.HeadlessException;
 import java.util.ArrayList;
@@ -92,7 +92,6 @@ public class DooubleLinkedLists {
 		}
 		
 	}
-
 
 	
 	public static void main(String[] args) {
