@@ -3,11 +3,14 @@ package inter7;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class Borderpanetest extends Application{
@@ -19,13 +22,15 @@ public static void main(String[] args) {
 		
 	
 	HBox Ontop = new HBox();
+	Canvas canvas = new Canvas(30,30);
+	GraphicsContext gc = canvas.getGraphicsContext2D();
+	gc.setStroke(Color.ORANGE);
+	gc.setFill(Color.WHITE);
+	gc.setLineDashes(3);
 	
-	Button file = new Button("File");
-	Button edit = new Button("Edit");
-	Button View = new Button("View");
 	
 	
-	Ontop.getChildren().addAll(file,edit,View);
+	Ontop.getChildren().addAll(canvas);
 	
 	VBox leftmenu = new VBox();
 	
@@ -35,7 +40,7 @@ public static void main(String[] args) {
 	leftmenu.getChildren().addAll(file2,edit2,View2);
 	
 	BorderPane bp = new BorderPane();
-	bp.setTop(Ontop);
+	bp.setCenter(Ontop);
 	bp.setLeft(leftmenu);
 	
 	Scene scene = new Scene(bp,400,300);

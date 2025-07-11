@@ -26,7 +26,7 @@ public void start(Stage stage) throws Exception {
 	gp.setAlignment(Pos.CENTER);
 	gp.setPadding(new Insets(20,20,20,20));
 	gp.setHgap(10);
-	gp.setVgap(0);
+	gp.setVgap(10);
 	
 	Label label = new Label("current value:");
 	GridPane.setConstraints(label, 0, 0);

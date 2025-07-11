@@ -29,6 +29,7 @@ public static void main(String[] args) {
 //		gc.strokeLine(0, 0, 400, 300);
 		
 		Rectangle rec = new Rectangle(500,500);
+		
 		rec.setStroke(javafx.scene.paint.Color.ORANGE);
 rec.setStrokeWidth(8);
 rec.setFill(javafx.scene.paint.Color.WHITE);

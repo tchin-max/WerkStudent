@@ -30,8 +30,8 @@ return heigth==0;
 	    		      
 
 	    			}
-	    	     storage[heigth]=p;
-	    	     heigth++;
+	    	     storage[heigth++]=p;
+	    	     
 		
 	  
 

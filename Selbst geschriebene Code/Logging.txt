@@ -2,3 +2,13 @@ Juni 21, 2025 9:40:15 PM inter8.LoggerTest main
 INFORMATION: Ich hab das geschrieben
 Juni 21, 2025 9:40:33 PM inter8.LoggerTest main
 INFORMATION: Ich hab das geschrieben ja ja
+Juni 25, 2025 3:09:06 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben yo
+Juni 25, 2025 3:11:50 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben yo
+Juni 25, 2025 3:14:19 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben yo
+Juni 25, 2025 3:15:25 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben yo
+Juli 05, 2025 10:12:50 PM inter8.LoggerTest main
+INFORMATION: Ich hab das geschrieben yo

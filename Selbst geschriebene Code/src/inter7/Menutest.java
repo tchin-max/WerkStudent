@@ -31,14 +31,22 @@ launch(args);
 		
 		fileMenu.getItems().add(new MenuItem("New project.."));
 		fileMenu.getItems().add(new MenuItem("new Module"));
-		fileMenu.getItems().add(new MenuItem("import Tools"));
+		fileMenu.getItems().add(new MenuItem("import Tools" ));
 		fileMenu.getItems().add(new SeparatorMenuItem());
 
 		fileMenu.getItems().add(new MenuItem("Save..."));
 		fileMenu.getItems().add(new SeparatorMenuItem());
 
-		fileMenu.getItems().add(new MenuItem("Settings.."));
-		MenuItem Exit = new MenuItem("Exit...");
+MenuItem sittinItem = new MenuItem("Setting...");
+sittinItem.setOnAction(t ->{
+	
+	MenuItem preference = new MenuItem("Preferences");
+	sittinItem.getId();
+	fileMenu.getItems().add(preference);
+	
+} );
+fileMenu.getItems().add(sittinItem);
+MenuItem Exit = new MenuItem("Exit...");
 		Exit.setOnAction(t -> System.exit(0));
 fileMenu.getItems().add(Exit);
 		
@@ -81,7 +89,6 @@ difficulty.getItems().addAll(easy,normal,Hard);
 		
 BorderPane bp = new BorderPane();
 bp.setTop(menuBar);
-bp.getChildren().addAll();
 		
 			Scene scene = new Scene(bp,300,200);
 			stage.setScene(scene);

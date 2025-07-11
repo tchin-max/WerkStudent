@@ -1,5 +1,7 @@
 package inter7;
 
+record getthings(String a, String b){}
+
 public class product{
 	public String name;
 	public double price;

@@ -3,6 +3,7 @@ package inter7;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -24,6 +25,7 @@ public class ListViewtest extends Application {
 		lv.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);;
 		
 		VBox vb = new VBox(10);
+		vb.setAlignment(Pos.CENTER);
 		Button button = new Button("submit");
 button.setOnAction(t -> {
 	

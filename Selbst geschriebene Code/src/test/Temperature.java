@@ -25,7 +25,7 @@ class Node{
 			
 		}else {
 			Node curr = head;
-			while (curr != null) {
+			while (curr.next!= null) {
 				curr = curr.next;
 			}
 			curr.next = n;

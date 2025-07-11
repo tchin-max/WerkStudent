@@ -8,18 +8,18 @@ import java.util.Scanner;
 public class p1klasur {
 	private static void printStarts(int n) {
 		
-		for (int i = n; i >0; i--) {
+		for (int i =0;i<n;i++) {
 			
 printit(i);
 			}
-		for (int i = 1; i <n; i++) {
+		for (int i = n;i>=0;i--) {
 			printit(i);
 		}
 	}
 	
 	private static void printit(int d) {
 for (int i = 0; i < d; i++) {
-	System.out.print("-");
+	System.out.print(d);
 	
 }		
 System.out.println();
@@ -53,7 +53,7 @@ for (int i = 0; i < array.length; i++) {
 	}
 	public static long countPositive(long[] arr, int index, long counter) {
 		
-if (index>arr.length) {
+if (index>=arr.length) {
 	return counter;
 }
 counter+=arr[index];
@@ -165,7 +165,7 @@ if (input== ergebnis) {
 			}
 
 		
-		return isInArray(num, array,index+1);
+		return isInArray(num, array, index+1);
 	
 	}
 	private static int [] everySecondElement(int array[]) {
@@ -179,7 +179,6 @@ for (int i = 0; i < array.length; i+=2) {
 return result;
 		
 	}
-	private  byte temp ;
 
 	
 	public static void main(String[] args) {
@@ -188,17 +187,17 @@ return result;
 		//System.out.println(findLast(arr,value));
 		//getNextRandomNumber();
 	//System.out.println(	countPositive(arr, 0, 0));
-	//	printStarts(8);
+	printStarts(7);
 		//System.out.println("gibt dein vorname");
 		//printSquare(5, 6, 3); 
 		//printNumbers(20);
 		//System.out.println(isLeapYearExpression(1900));
 		//System.out.println( isInArray(value, arr,0));
-		int rec[] = everySecondElement(arr) ;
-		for (int j : rec) {
-			System.out.println(j);
-
-		}
+//		int rec[] = everySecondElement(arr) ;
+//		for (int j : rec) {
+//			System.out.println(j);
+//
+//		}
 		}
 	
 }

@@ -28,6 +28,7 @@ transient	String Passwort;
 	
 	oos.close();
 	ObjectInputStream ois = new ObjectInputStream(new FileInputStream("ser.ser"));
+	
 transienTest t = (transienTest) ois.readObject();
 	ois.close();
 	System.out.print(t.Name +" ");

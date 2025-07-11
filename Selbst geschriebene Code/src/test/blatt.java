@@ -1,5 +1,6 @@
 package test;
 
+import java.lang.module.ModuleDescriptor.Builder;
 import java.util.Iterator;
 
 
@@ -48,7 +49,7 @@ for (int i = 0; i < p.length; i++) {
 int anfand=0 ;
 	int Ende = (char) (p.length-1);
 	int wortanfand = Character.toLowerCase(p[anfand]);
-	char wortende = Character.toLowerCase(p[wortanfand]);
+	char wortende = Character.toLowerCase(p[Ende]);
 	while(anfand<Ende) {
 		if (wortanfand!=wortende) {
 			return false;
@@ -144,12 +145,15 @@ return true;
 		return open=='('&&close==')' ||open=='{'&&close=='}' || open=='['&&close==']';
 	}
 	public static void main(String[] args) {
+		blatt bl = new blatt();
+
+		
 		int a[]= {5,1,5,9,5,4,6,5};
 		int b[]= {65,25,32};
-//printMessage("Hallo", 1);
+printMessage("Hallo", 1);
 		//printRectangle(4, 5);
 		//System.out.println(arrayContains(a, b));
 		//printchristmaustree(10);
-	System.out.println(	parenthesis("((sdf}}"));
+//	System.out.println(	parenthesis("((sdf}}"));
 	}
 }
