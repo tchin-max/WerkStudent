@@ -1,6 +1,5 @@
 package inter8;
 
-import java.awt.Point;
 
 public class BUildertest {
 private final String course;
