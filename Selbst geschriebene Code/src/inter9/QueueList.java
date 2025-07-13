@@ -1,4 +1,4 @@
-package inter9;
+ package inter9;
 
 public class QueueList<T> implements Queue<T> {
 	

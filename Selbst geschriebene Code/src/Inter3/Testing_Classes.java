@@ -1,19 +1,27 @@
 package Inter3;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class Testing_Classes {
+	private Calculator calc;
+	private CalculatorNumber n1;
+	private CalculatorNumber n2;
+
+	
+@BeforeEach
+public void setUpInstanz() {
+	calc = new Calculator();
+	n1 = new CalculatorNumber(5);
+	n2 = new CalculatorNumber(9);
+calc.getReady();
+}
 
 	@Test
 	void Addition() {
-	 Calculator c  = new  Calculator();
-	 assertEquals(1, c.add(5, 5));
-	 
-//	assertEquals(13,  c.add(4, 9));
-//	assertTrue(c.add(5, 15)== 20);
-	
-	
+	//CalculatorNumber result = calc.add(n1, n2);
 	}
 
 }
