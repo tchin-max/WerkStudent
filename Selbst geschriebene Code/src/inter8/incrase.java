@@ -39,6 +39,7 @@ public void start(Stage stage) throws Exception {
 	tf.setEditable(false);
 	
 	Button btn = new Button("click");
+	
 	GridPane.setConstraints(btn, 1, 3);
 	btn.setOnAction(t -> {
 		 int count = Integer.parseInt(tf.getText());

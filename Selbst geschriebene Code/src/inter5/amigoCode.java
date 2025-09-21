@@ -42,9 +42,9 @@ public class amigoCode {
 
 		}
 	public static java.util.List<people> getpeople() {
-return List.of(new people("jojo", 12, Gender.Male),
+return new ArrayList<>( List.of(new people("jojo", 12, Gender.Male),
 				new people("Sandra", 32, Gender.Female),
 				new people("Obonjajar", 9, Gender.Male),
-				new people("ALina", 23, Gender.Female));
+				new people("ALina", 23, Gender.Female)));
 	}
 }

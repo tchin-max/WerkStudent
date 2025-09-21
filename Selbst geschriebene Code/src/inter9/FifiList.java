@@ -19,7 +19,7 @@ private Node n = head;
 	@Override
 	public Object get() {
 if (empty()) {
-	throw new NoSuchElementException();
+	throw new NoSuchElementException("not valid");
 }
 Object value = head.next.data;
 head.next=head.next.next;
@@ -34,17 +34,6 @@ return value;
 Node node = new Node(o);
 n.next= node;
 n = node;
-
-//if (head== null) {
-//	head=n;
-//}else {
-//	Node curr = head;
-//	while (curr.next!=null) {
-//		curr= curr.next;
-//	}
-//	curr.next=new Node(o);
-//}
-	
 	}
 
 	@Override

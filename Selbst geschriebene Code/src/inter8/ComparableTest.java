@@ -23,7 +23,7 @@ public String getName() {
 @Override
 public int compareTo(ComparableTest o) {
 
-	return Integer.compare(age, o.age);
+	return Integer.compare(this.age, o.age);
 }
 
 

@@ -1,5 +1,7 @@
 package test;
 
+import com.sun.javafx.scene.paint.GradientUtils.Point;
+
 public class Circle extends Shape{
 	
 	public static float PI = 3.14159f;

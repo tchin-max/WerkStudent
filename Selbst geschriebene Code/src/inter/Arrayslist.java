@@ -19,7 +19,7 @@ public class Arrayslist {
 
 	while(true) {
 		
-		System.out.println("ïst die Liste fertig? j/n");
+		System.out.println("ist die Liste fertig? j/n");
 		String s= sc.next();
 		
 		

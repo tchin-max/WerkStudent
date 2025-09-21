@@ -1,5 +1,7 @@
 package test;
 
+import com.sun.javafx.scene.paint.GradientUtils.Point;
+
 public class Shape {
 	
 	private Point location;
