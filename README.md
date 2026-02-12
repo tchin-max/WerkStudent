@@ -107,5 +107,7 @@ Key implementation aspects:
 - (Optional) JavaFX
 - JUnit (if tests were written)
 
+---
 
+As show in the second directory l've implemented many kind of deseign pattern for practice such as: Adapter pattern, factory methode, etc...
 
