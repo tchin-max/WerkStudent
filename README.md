@@ -1,2 +1,2 @@
 # WerkStudent
-Alle Aufgaben und Ergebnisse, die ich wahrend des Studiums gemacht habe.
+All Projects and little Exercices that i have done during my 2 semester in Java.
